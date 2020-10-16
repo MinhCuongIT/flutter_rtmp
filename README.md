@@ -6,72 +6,71 @@ environment:
   flutter: ">=1.10.0"
 ```
 
-## 使用方法
->   **git安装使用时建议要按照tag/release版本号**
+## Instructions
+> **It is recommended to follow the tag/release version number when installing and using git**
 
-### [更新 0.1.6](https://github.com/MEnigma/flutter_rtmp/blob/master/CHANGELOG.md)
+### [Update 0.1.6](https://github.com/MEnigma/flutter_rtmp/blob/master/CHANGELOG.md)
 
 
-### 引入
-#### 1.第一种方法
+### Introduction
+#### 1. The first method
     flutter_rtmp:
        git: https://github.com/MEnigma/flutter_rtmp.git
        ref: ***
 
-#### 2.第二种
+#### 2. The second
     flutter_rtmp: ^*.*.*
 
-#### 关于iOS的配置
+#### About iOS configuration
 ```
-需要在info.plist中添加 
+Need to be added in info.plist
 
 <key>io.flutter.embedded_views_preview</key>
 <true/>
 ```
-#### 关于Android的配置
+#### About Android configuration
 ```
-暂无需配置
+No need to configure
 ```
 
->示例
->   ```
->    /// 控制器
->    void initState() {
->        super.initState();
->        _manager = RtmpManager();
->    }
+>Example
+> ```
+> /// Controller
+> void initState() {
+> super.initState();
+> _manager = RtmpManager();
+>}
 >
->    /// 视图
->   Widget build(BuildContext context) {
+> /// View
+> Widget build(BuildContext context) {
 >
->      return RtmpView(
->            manager: _manager,
->       );
->   }
->   ```
+> return RtmpView(
+> manager: _manager,
+> );
+>}
+> ```
     
-### 引用
+### Quote
 
->*   iOS 使用[LFLiveKit](https://github.com/LaiFengiOS/LFLiveKit)
->*   android中使用[yasea](https://github.com/begeekmyfriend/yasea)
+>* iOS use [LFLiveKit](https://github.com/LaiFengiOS/LFLiveKit)
+>* Use [yasea] in android(https://github.com/begeekmyfriend/yasea)
 
-### 进度
+### Progress
 
-* [x] 推流
-* [x] 切换摄像头
-* [ ] 美颜
-* [ ] 旋转
+* [x] Push stream
+* [x] Switch camera
+* [] Beauty
+* [] Rotate
 
 
 ### [LICENSE](https://github.com/MEnigma/flutter_rtmp/blob/master/LICENSE)
 
-* 参与者
->* mark < https://github.com/MEnigma >
->* youshinki < https://github.com/youshinki >
+* Participants
+>* mark <https://github.com/MEnigma>
+>* youshinki <https://github.com/youshinki>
 
 ### Versions
-##### [更新记录](https://github.com/MEnigma/flutter_rtmp/blob/master/CHANGELOG.md)
+##### [Update Log](https://github.com/MEnigma/flutter_rtmp/blob/master/CHANGELOG.md)
 * [0.1.6.1](https://github.com/MEnigma/flutter_rtmp/tree/v0.1.6.1)
 * [0.1.6](https://github.com/MEnigma/flutter_rtmp/tree/v0.1.6)
 * [0.1.4](https://github.com/MEnigma/flutter_rtmp/tree/v0.1.4)
-
